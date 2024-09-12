@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Resto App</title>
+  </head>
+  <body>
+    <div class="notification">
+      <p class="notification__text">Бесплатная доставка от 1 000 ₽</p>
+      <button type="button" class="notification__hide-btn">
+        <img
+          class="notification__hide-btn-img"
+          src="./assets/img/x-mark.svg"
+          alt="Скрыть"
+        />
+      </button>
+    </div>
+    <header class="header">
+      <div class="header__content container">
+        <a href="/" class="header__logo-link">
+          <img
+            class="header__logo-img"
+            src="./assets/img/logo.svg"
+            alt="restoapp"
+          />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Меню</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Акции</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">О нас</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">События</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Зоны доставки</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__block">
+          <div class="header__info">
+            <a class="header__phone" href="tel:+01234567890"
+              >+0 (123) 456 78-90</a
+            >
+            <p class="header__order-time">Прием заказов с 10:00 до 22:40</p>
+          </div>
+          <div class="header__menu">
+            <button
+              type="button"
+              class="header__menu-btn header__menu-btn--profile"
+            >
+              <img
+                class="header__menu-btn-img"
+                src="./assets/img/user.svg"
+                alt="Профиль"
+              />
+            </button>
+            <button
+              type="button"
+              class="header__menu-btn header__menu-btn--basket"
+            >
+              <img
+                class="header__menu-btn-img"
+                src="./assets/img/basket.svg"
+                alt="Корзина"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="menu food-category">
+        <h2 class="menu__title">Меню</h2>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__item-link menu__item-link--food-category">
+              <figure class="menu__item-figure">
+                <img
+                  class="menu__item-img menu__item-img--food-category"
+                  src="./assets/img/food-category/pizza.jpg"
+                  alt="Пицца"
+                />
+                <figcaption
+                  class="menu__item-caption menu__item-caption--food-category"
+                >
+                  Пицца
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__item-link menu__item-link--food-category">
+              <figure class="menu__item-figure">
+                <img
+                  class="menu__item-img menu__item-img--food-category"
+                  src="./assets/img/dishes/pho-bo.jpg"
+                  alt="Супы"
+                />
+                <figcaption
+                  class="menu__item-caption menu__item-caption--food-category"
+                >
+                  Супы
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__item-link menu__item-link--food-category">
+              <figure class="menu__item-figure">
+                <img
+                  class="menu__item-img menu__item-img--food-category"
+                  src="./assets/img/food-category/hot-dishes.jpg"
+                  alt="Горячие блюда"
+                />
+                <figcaption
+                  class="menu__item-caption menu__item-caption--food-category"
+                >
+                  Горячие блюда
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__item-link menu__item-link--food-category">
+              <figure class="menu__item-figure">
+                <img
+                  class="menu__item-img menu__item-img--food-category"
+                  src="./assets/img/food-category/salad.jpg"
+                  alt="Салаты"
+                />
+                <figcaption
+                  class="menu__item-caption menu__item-caption--food-category"
+                >
+                  Салаты
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="menu food-new">
+        <h2 class="menu__title">Новинки</h2>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">
+              <ul class="menu__item-tags">
+                <li class="menu__item-tag">
+                  <img
+                    class="menu__item-tag-img"
+                    src="./assets/img/dishes-icons/vegetarian.svg"
+                    alt="Вегетарианское"
+                  />
+                </li>
+              </ul>
+              <figure class="menu__item-figure">
+                <img
+                  class="menu__item-img menu__item-img--food-card"
+                  src="./assets/img/dishes/chinese-egg-soup.jpg"
+                  alt="Китайский яичный суп"
+                />
+                <figcaption
+                  class="menu__item-caption menu__item-caption--food-card"
+                >
+                  <h4 class="menu__item-caption-title">Китайский яичный суп</h4>
+                  <div class="asd">
+                    <p class="menu__item-caption-text">
+                      Традиционный китайский суп с яйцом и томатами черри
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <button type="button" class="menu__item-button" disabled>
+              <span class="menu__item-button-text">350</span>
+            </button>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">
+              <ul class="menu__item-tags">
+                <li class="menu__item-tag">
+                  <img
+                    class="menu__item-tag-img"
+                    src="./assets/img/dishes-icons/vegetarian.svg"
+                    alt="Вегетарианское"
+                  />
+                </li>
+              </ul>
+              <figure class="menu__item-figure">
+                <img
+                  class="menu__item-img menu__item-img--food-card"
+                  src="./assets/img/dishes/paella.jpg"
+                  alt="Паэлья"
+                />
+                <figcaption
+                  class="menu__item-caption menu__item-caption--food-card"
+                >
+                  <h4 class="menu__item-caption-title">Паэлья</h4>
+                  <div class="asd">
+                    <p class="menu__item-caption-text">
+                      Традиционное испанское блюдо — рис, колбаски чоризо,
+                      куриное бедро, кальмар, кукуруза, горошек, специи
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <button type="button" class="menu__item-button" disabled>
+              <span class="menu__item-button-text">660</span>
+            </button>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">
+              <figure class="menu__item-figure">
+                <img
+                  class="menu__item-img menu__item-img--food-card"
+                  src="./assets/img/dishes/boeuf-bourguignon.jpg"
+                  alt="Биф Бургеньон"
+                />
+                <figcaption
+                  class="menu__item-caption menu__item-caption--food-card"
+                >
+                  <h4 class="menu__item-caption-title">Биф Бургеньон</h4>
+                  <div class="asd">
+                    <p class="menu__item-caption-text">
+                      Блюдо французской кухни — тушёные кусочки говядины с
+                      картофелем и болгарским перцем
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <button type="button" class="menu__item-button" disabled>
+              <span class="menu__item-button-text">630</span>
+            </button>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">
+              <ul class="menu__item-tags">
+                <li class="menu__item-tag">
+                  <img
+                    class="menu__item-tag-img"
+                    src="./assets/img/dishes-icons/vegetarian.svg"
+                    alt="Вегетарианское"
+                  />
+                </li>
+              </ul>
+              <figure class="menu__item-figure">
+                <img
+                  class="menu__item-img menu__item-img--food-card"
+                  src="./assets/img/dishes/broken-cucumbers.jpg"
+                  alt="Битые огурцы"
+                />
+                <figcaption
+                  class="menu__item-caption menu__item-caption--food-card"
+                >
+                  <h4 class="menu__item-caption-title">Битые огурцы</h4>
+                  <div class="asd">
+                    <p class="menu__item-caption-text">
+                      Салат из свежих битых огурцов c уйгурским соусом, кешью и
+                      кунжутом
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <button type="button" class="menu__item-button" disabled>
+              <span class="menu__item-button-text">320</span>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="menu food-popular">
+        <h2 class="menu__title">Популярное</h2>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">
+              <ul class="menu__item-tags">
+                <li class="menu__item-tag">
+                  <img
+                    class="menu__item-tag-img"
+                    src="./assets/img/dishes-icons/vegetarian.svg"
+                    alt="Вегетарианское"
+                  />
+                </li>
+              </ul>
+              <figure class="menu__item-figure">
+                <img
+                  class="menu__item-img menu__item-img--food-card"
+                  src="./assets/img/dishes/pepperoni.jpg"
+                  alt="Пепперони"
+                />
+                <figcaption
+                  class="menu__item-caption menu__item-caption--food-card"
+                >
+                  <h4 class="menu__item-caption-title">Пепперони</h4>
+                  <div class="asd">
+                    <p class="menu__item-caption-text">
+                      Просто и вкусно - томатная основа маринара, колбаски
+                      пепперони и сыр моцарелла
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <button type="button" class="menu__item-button" disabled>
+              <span class="menu__item-button-text">660</span>
+            </button>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">
+              <ul class="menu__item-tags">
+                <li class="menu__item-tag">
+                  <img
+                    class="menu__item-tag-img"
+                    src="./assets/img/dishes-icons/vegetarian.svg"
+                    alt="Вегетарианское"
+                  />
+                </li>
+              </ul>
+              <figure class="menu__item-figure">
+                <img
+                  class="menu__item-img menu__item-img--food-card"
+                  src="./assets/img/dishes/pear-gorgonzola.jpg"
+                  alt="Груша Горгонзола"
+                />
+                <figcaption
+                  class="menu__item-caption menu__item-caption--food-card"
+                >
+                  <h4 class="menu__item-caption-title">Груша Горгонзола</h4>
+                  <div class="asd">
+                    <p class="menu__item-caption-text">
+                      Нежная пицца на основе сливочного соуса с сыром
+                      горгондзола, грушей, медом и кедровыми орехами
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <button type="button" class="menu__item-button" disabled>
+              <span class="menu__item-button-text">780</span>
+            </button>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">
+              <figure class="menu__item-figure">
+                <img
+                  class="menu__item-img menu__item-img--food-card"
+                  src="./assets/img/dishes/pho-bo.jpg"
+                  alt="Фо Бо"
+                />
+                <figcaption
+                  class="menu__item-caption menu__item-caption--food-card"
+                >
+                  <h4 class="menu__item-caption-title">Фо Бо</h4>
+                  <div class="asd">
+                    <p class="menu__item-caption-text">
+                      Вьетнамский суп с рисовой лапшой, в котором используется
+                      говядина, свежая зелень и ростки сои. Подают с добавками,
+                      такими как мята, долька лайма, острый соус шрирача,
+                      азиатский уксус и лаоганма
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <button type="button" class="menu__item-button" disabled>
+              <span class="menu__item-button-text">490</span>
+            </button>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">
+              <ul class="menu__item-tags">
+                <li class="menu__item-tag">
+                  <img
+                    class="menu__item-tag-img"
+                    src="./assets/img/dishes-icons/sharp.svg"
+                    alt="Острое"
+                  />
+                </li>
+                <li class="menu__item-tag">
+                  <img
+                    class="menu__item-tag-img"
+                    src="./assets/img/dishes-icons/seafood.svg"
+                    alt="С морепродуктами"
+                  />
+                </li>
+              </ul>
+              <figure class="menu__item-figure">
+                <img
+                  class="menu__item-img menu__item-img--food-card"
+                  src="./assets/img/dishes/tom-yam-with-seafood.jpg"
+                  alt="Том Ям с морепродуктами"
+                />
+                <figcaption
+                  class="menu__item-caption menu__item-caption--food-card"
+                >
+                  <h4 class="menu__item-caption-title">
+                    Том Ям с морепродуктами
+                  </h4>
+                  <div class="asd">
+                    <p class="menu__item-caption-text">
+                      Просто и вкусно - томатная основа маринара, колбаски
+                      пепперони и сыр моцарелла
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <button type="button" class="menu__item-button" disabled>
+              <span class="menu__item-button-text">660</span>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

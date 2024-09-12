@@ -1,0 +1,12 @@
+:root {
+  --font-family: 'Inter', sans-serif;
+  --neutral-100: #ffffff;
+  --neutral-200: #f4f4f4;
+  --neutral-500: #727272;
+  --neutral-600: #555555;
+  --neutral-800: #1c1c1c;
+  --neutral-1000: #000000;
+  --primary-400: #fedd2c;
+  --primary-600: #f9c201;
+  --border-radius: 16px;
+}
