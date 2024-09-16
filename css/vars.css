@@ -5,8 +5,10 @@
   --neutral-500: #727272;
   --neutral-600: #555555;
   --neutral-800: #1c1c1c;
+  --neutral-1000-06: rgb(0 0 0 / 60%);
   --neutral-1000: #000000;
   --primary-400: #fedd2c;
   --primary-600: #f9c201;
   --border-radius: 16px;
+  --border-radius-small: 8px;
 }
