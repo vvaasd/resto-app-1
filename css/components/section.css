@@ -1,0 +1,161 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding-block: 32px;
+}
+
+.section__title {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.section__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.section__list--wide {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section__item-link {
+  position: relative;
+  display: block;
+}
+
+.section__item-link--widget {
+  overflow: hidden;
+  background-color: var(--neutral-1000);
+  border-radius: var(--border-radius);
+}
+
+.section__item-img {
+  pointer-events: none;
+
+  position: relative;
+
+  overflow: hidden;
+  display: block;
+
+  height: 304px;
+
+  object-fit: cover;
+}
+
+.section__item-img--wide {
+  height: 360px;
+}
+
+.section__item-img--widget {
+  mask-image: linear-gradient(
+    180deg,
+    rgb(0 0 0 / 100%) 50%,
+    rgb(0 0 0 / 50%) 100%
+  );
+}
+
+.section__item-img--food-card {
+  border-radius: var(--border-radius);
+}
+
+.section__item-caption--widget {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--neutral-100);
+}
+
+.section__item-caption--wide {
+  bottom: 32px;
+  left: 32px;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.section__item-caption--food-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  margin-top: 16px;
+}
+
+.section__item-caption-title {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--neutral-1000);
+}
+
+.section__item-caption-text {
+  overflow: hidden;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--neutral-500);
+  text-overflow: ellipsis;
+}
+
+.section__item-button {
+  width: 100%;
+  height: 56px;
+  margin-top: 16px;
+
+  background-color: var(--neutral-200);
+  border-radius: var(--border-radius);
+
+  transition: background-color var(--transition-medium);
+}
+
+.section__item-button:not(:disabled):hover {
+  background-color: var(--neutral-300);
+}
+
+.section__item-button:not(:disabled):hover .section__item-button-text {
+  color: var(--neutral-700);
+}
+
+.section__item-button-text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--neutral-1000);
+
+  transition: color var(--transition-medium);
+
+  &::after {
+    content: ' ₽';
+  }
+}
+
+.section__button {
+  width: 100%;
+  padding: 14px 22px;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--neutral-800);
+
+  border: 2px solid var(--neutral-800);
+  border-radius: var(--border-radius);
+
+  transition: color var(--transition-medium),
+    background-color var(--transition-medium);
+}
+
+.section__button:not(:disabled):hover {
+  color: var(--neutral-100);
+  background-color: var(--neutral-800);
+}

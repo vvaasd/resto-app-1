@@ -1,0 +1,21 @@
+.notification {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: center;
+
+  height: 48px;
+
+  background-color: var(--neutral-1000);
+}
+
+.notification__text {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--neutral-100);
+}
+
+.notification__hide-btn {
+  width: 24px;
+  height: 24px;
+}

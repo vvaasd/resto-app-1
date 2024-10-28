@@ -1,0 +1,48 @@
+.section__item-tags {
+  pointer-events: none;
+
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  column-gap: 8px;
+}
+
+.section__item-tags--wide {
+  top: 32px;
+  right: 32px;
+}
+
+.section__item-tags--left {
+  left: 8px;
+}
+
+.section__item-tags--left.section__item-tags--wide {
+  left: 32px;
+}
+
+.section__item-tag {
+  height: 36px;
+}
+
+.section__item-tag-card {
+  padding: 8px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--neutral-100);
+
+  background-color: var(--neutral-1000-06);
+  border-radius: var(--border-radius-small);
+}
+
+.section__item-tag-card--negative {
+  background-color: var(--neutral-500);
+}
+
+.section__item-tag-card--positive {
+  color: var(--neutral-800);
+  background: var(--primary-400);
+}

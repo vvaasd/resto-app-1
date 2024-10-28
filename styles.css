@@ -1,0 +1,10 @@
+@import url('./css/normalize.css');
+@import url('./css/reset.css');
+@import url('./css/fonts.css');
+@import url('./css/vars.css');
+@import url('./css/main.css');
+@import url('./css/components/notification.css');
+@import url('./css/components/header.css');
+@import url('./css/components/section-item-tags.css');
+@import url('./css/components/section.css');
+@import url('./css/components/footer.css');

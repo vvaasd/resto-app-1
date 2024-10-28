@@ -1,0 +1,140 @@
+.footer {
+  background-color: var(--neutral-800);
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-block: 32px;
+}
+
+.footer-block {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer__phone {
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--neutral-200);
+  transition: color var(--transition-medium);
+}
+
+.footer__phone:hover {
+  color: var(--neutral-400);
+}
+
+.footer__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--neutral-400);
+}
+
+.footer__text--full {
+  width: 100%;
+  text-align: center;
+}
+
+.footer__icon-list {
+  display: flex;
+  gap: 8px;
+}
+
+.footer__contact-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__contact-svg path {
+  transition: fill var(--transition-medium);
+}
+
+.footer-sticker:hover .footer__contact-svg path {
+  fill: var(--neutral-100);
+}
+
+.footer-sticker {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 8px;
+
+  background-color: var(--neutral-700);
+  border-radius: var(--border-radius-small);
+}
+
+.footer-sticker--small {
+  height: 29px;
+  padding-block: 4px;
+}
+
+.footer__payment-img {
+  height: 21px;
+}
+
+.footer__link.footer__text {
+  transition: color var(--transition-medium);
+}
+
+.footer__link.footer__text:hover {
+  color: var(--neutral-100);
+}
+
+.footer__logo-wrapper {
+  width: 284px;
+  height: 24px;
+}
+
+.footer__nav-list {
+  display: flex;
+  gap: 32px;
+}
+
+.footer__nav-link {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--neutral-200);
+  transition: color var(--transition-medium);
+}
+
+.footer__nav-link:hover {
+  color: var(--neutral-400);
+}
+
+.footer__app-img {
+  display: block;
+  height: 40px;
+}
+
+.footer__app-link {
+  opacity: 0.5;
+  transition: opacity var(--transition-medium);
+}
+
+.footer__app-link:hover {
+  opacity: 1;
+}
+
+.footer__documents-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__link--underlined {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer__underline {
+  height: 1px;
+  background-color: var(--neutral-700);
+}
