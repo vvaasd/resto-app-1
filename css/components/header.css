@@ -32,6 +32,11 @@
   padding-block: 8px;
   font-size: 16px;
   line-height: 24px;
+  transition: color var(--transition-medium);
+}
+
+.header__nav-link:hover {
+  color: var(--neutral-800);
 }
 
 .header__info {
@@ -41,6 +46,11 @@
 .header__phone {
   font-size: 18px;
   line-height: 24px;
+  transition: color var(--transition-medium);
+}
+
+.header__phone:hover {
+  color: var(--neutral-800);
 }
 
 .header__order-time {
@@ -55,20 +65,50 @@
 }
 
 .header__menu-btn {
+  position: relative;
+
   width: 56px;
   height: 48px;
+
   border-radius: var(--border-radius);
+
+  transition: background-color var(--transition-medium);
 }
 
 .header__menu-btn--profile {
   border: 2px solid var(--neutral-1000);
 }
 
+.header__menu-btn--profile:hover {
+  background-color: var(--neutral-800);
+}
+
+.header__menu-btn--profile:hover .header__menu-btn-img path {
+  fill: var(--neutral-100);
+}
+
 .header__menu-btn--basket {
   background-color: var(--neutral-1000);
 }
 
+.header__menu-btn--basket:hover {
+  background-color: var(--neutral-100);
+}
+
+.header__menu-btn--basket:hover .header__menu-btn-img path {
+  fill: var(--neutral-800);
+}
+
 .header__menu-btn-img {
-  aspect-ratio: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   width: 24px;
+  height: 24px;
+}
+
+.header__menu-btn-img path {
+  transition: fill var(--transition-medium);
 }

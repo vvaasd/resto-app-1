@@ -10,6 +10,10 @@
   padding-bottom: 32px;
 }
 
+.none {
+  display: none !important;
+}
+
 html,
 body {
   width: 100%;
@@ -17,6 +21,7 @@ body {
 }
 
 body {
+  min-width: 1440px;
   margin: 0;
 
   font-family: var(--font-family);
@@ -28,9 +33,6 @@ body {
 
 img {
   pointer-events: none;
-  user-select: none;
-  user-select: none;
-  user-select: none;
   user-select: none;
 }
 
